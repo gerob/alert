@@ -1,7 +1,7 @@
 {
     "name": "gerob/alert",
     "description": "Alert is a package to be used with Laravel 4 API messages where you aren't passing a session through",
-    "keywords": ["alert", "messages", "laravel", "laravel4", "api", "hmac"]
+    "keywords": ["alert", "messages", "laravel", "laravel4", "api", "hmac"],
     "license": "MIT",
     "authors": [
         {
