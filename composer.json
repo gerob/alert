@@ -1,6 +1,8 @@
 {
     "name": "gerob/alert",
-    "description": "",
+    "description": "Alert is a package to be used with Laravel 4 API messages where you aren't passing a session through",
+    "keywords": ["alert", "messages", "laravel", "laravel4", "api", "hmac"]
+    "license": "MIT",
     "authors": [
         {
             "name": "Gerob Kimball",
@@ -9,7 +11,11 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "illuminate/support": "4.0.x"
+        "illuminate/support": "4.0.x",
+        "illuminate/config": "~4"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.7.2"
     },
     "autoload": {
         "psr-0": {
