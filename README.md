@@ -4,6 +4,7 @@ This is a package for returning messages when you aren't dealing with sessions. 
 example when you're using Laravel to return only API responses.
 
 ## Installation
+
 ### First install the package
 
     composer require gerob/alert:dev-master
