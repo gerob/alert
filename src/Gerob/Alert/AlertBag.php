@@ -13,6 +13,13 @@ class AlertBag
     protected $config;
 
     /**
+     * Get all of our messages
+     *
+     * @var array
+     */
+    protected $messages = array();
+
+    /**
      * Construct our AlertBag class
      *
      * @param \Illuminate\Config\Repository $config
@@ -22,8 +29,10 @@ class AlertBag
     public function __construct( Repository $config, array $messages = array() )
     {
         $this->config = $config;
-        $this->messages = $messages;
-
+        foreach ($messages as $key => $value)
+        {
+            $this->messages[$key] = (array) $value;
+        }
     }
 
     /**
@@ -49,9 +58,9 @@ class AlertBag
         if (in_array($method, $this->getLevels())) 
         {            
             // Build the array of messages then
-            return array(
-                $method => $messages
-            );
+            $this->messages[$method] = $messages; 
+
+            return $this->messages;
         }
         // Otherwise let them know it's not defined
         throw new BadMethodCallException("The alert level [$method] has not been configured");
