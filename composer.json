@@ -22,5 +22,10 @@
             "Gerob\\Alert": "src/"
         }
     },
+    "extras": {
+        "branch-alias": {
+            "dev-master": "1.0.0-dev"
+        }
+    },
     "minimum-stability": "dev"
 }
