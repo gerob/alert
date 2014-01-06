@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.1.*",
-        "illuminate/config": "~4"
+        "illuminate/support": ">=4.0.9,<4.2",
+        "illuminate/config": ">=4.0.9,<4.2"
     },
     "require-dev": {
         "mockery/mockery": "0.7.2"
